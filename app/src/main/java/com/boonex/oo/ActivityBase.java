@@ -1,6 +1,7 @@
 package com.boonex.oo;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -59,6 +60,10 @@ abstract public class ActivityBase extends ActionBarActivity {
     	
     }
 
+    protected void BackAction () {
+
+    }
+
     protected void customAction () {
     	
     }
@@ -85,7 +90,12 @@ abstract public class ActivityBase extends ActionBarActivity {
         switch (item.getItemId()) {
         case R.id.menu_refresh:
         	reloadRemoteData();
+        	Log.d("ActivityBase","button menu_refresh");
             return true;
+            /*
+        case R.id.home_btn:
+            BackAction();
+            return true;*/
         default:
         	return super.onOptionsItemSelected(item);
         }

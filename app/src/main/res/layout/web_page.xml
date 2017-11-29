@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"          
     style="@style/OOScreen">
-    
+
 <WebView android:id="@+id/web_view"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"        

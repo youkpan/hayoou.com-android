@@ -4,12 +4,14 @@ package com.boonex.oo.home;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -36,6 +38,7 @@ public class WebPageActivity extends ActivityBase {
 	
 	protected WebView m_viewWeb;
 	protected ProgressBar m_progressBar;
+	private long lastcallreload_t = 0;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -55,18 +58,38 @@ public class WebPageActivity extends ActivityBase {
         m_viewWeb.loadUrl(sUrl, Main.getHeadersForLoggedInUser());
         m_viewWeb.setWebViewClient(new WebPageViewClient(this));
         m_viewWeb.setWebChromeClient(new WebPageChromeClient(this));
-        
+/*
+		Button m_btnPrev = (Button)this.findViewById(R.id.media_images_gallery_prev);
+		m_btnPrev.setVisibility(Button.VISIBLE);
+		m_btnPrev.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				m_viewWeb.goBack();
+			}
+		});
+        */
     }
     
     @Override
     public void setContentView (int iLayoutResID) {    	
     	super.setContentView(iLayoutResID);
     }
-    
-    protected void reloadRemoteData () {    	
-    	m_viewWeb.clearCache(true);
+    @Override
+    protected void reloadRemoteData () {
+        long timenow =SystemClock.currentThreadTimeMillis() ;
+        lastcallreload_t = 0;
+        if(lastcallreload_t == 0 )
+            lastcallreload_t = timenow + 5000;
+    	if( timenow - lastcallreload_t < 1500 ) {
+            m_viewWeb.clearCache(true);
+            Log.d(TAG,"m_viewWeb.clearCache");
+        }
     	m_viewWeb.reload();
+    	//Toast.makeText(getApplicationContext(),"正在重新加载");
     }
+	@Override
+	protected void BackAction () {
+        m_viewWeb.goBack();
+	}
     
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {

@@ -23,7 +23,7 @@ import com.boonex.oo.home.HomeActivity;
 public class Main extends ListActivityBase {
 	private static final String TAG = "OO Main";
 	
-	public static final String LOCK_TO_SITE=null; // specify site you want to lock to, for example: "mysite.com/dolphin"
+	public static final String LOCK_TO_SITE="f.hayoou.com"; // specify site you want to lock to, for example: "mysite.com/dolphin"
 	
     private static final int ACTIVITY_LOGIN=0;
     private static final int ACTIVITY_HOME=1;
@@ -154,8 +154,8 @@ public class Main extends ListActivityBase {
     public boolean onCreateOptionsMenu(Menu menu) {
     	MenuInflater inflater = getMenuInflater();
     	inflater.inflate(R.menu.main, menu);
-    	if (null != Main.LOCK_TO_SITE)
-    		menu.removeItem(R.id.main_add_site);
+    	//if (null != Main.LOCK_TO_SITE)
+    	//	menu.removeItem(R.id.main_add_site);
     	return true;
     }
 
