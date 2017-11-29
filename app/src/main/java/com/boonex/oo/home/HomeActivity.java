@@ -148,8 +148,14 @@ public class HomeActivity extends ActivityBase {
     	mapVideos.put("action", "8");
     	mapVideos.put("bubble", "");
     	mapVideos.put("icon", "home_videos.png");
+
+		Map<String, String> mapNewsFeed = new HashMap<String, String>();
+        mapNewsFeed.put("title", "动态消息");
+        mapNewsFeed.put("action", "99");
+        mapNewsFeed.put("bubble", "");
+        mapNewsFeed.put("icon", "home_videos.png");
     	
-    	Object[] aMenu = {
+    	Object[] aMenu = {mapNewsFeed,
     			mapStatus, mapLocation, mapMessages,
     			mapFriends, mapInfo, mapSearch,
     			mapImages, mapSounds, mapVideos};
@@ -216,6 +222,11 @@ public class HomeActivity extends ActivityBase {
         mapActions.put(9, new OnClickListener() {
             public void onClick(View v) {              	
             	LaunchActivitySounds();
+            }
+        });
+        mapActions.put(99, new OnClickListener() {
+            public void onClick(View v) {
+                LaunchActivityNewsFeed();
             }
         });
 
@@ -296,7 +307,8 @@ public class HomeActivity extends ActivityBase {
     	Object[] aParams;
     	String sMethod;
         Connector o = new Connector (m_sSite, m_sUsername, m_sPasswd, m_iMemberId);        
-        
+
+        //o.setPassword0(m_sPasswd);
         o.setPassword (32 == m_sPasswd.length() || 40 == m_sPasswd.length() ? m_sPasswd : o.md5(m_sPasswd));
         o.setProtocolVer(m_iProtocolVer);
         
@@ -341,8 +353,21 @@ public class HomeActivity extends ActivityBase {
 			    	m_sUserTitle = m_sUsername;
 		    	}
 					
-				if (m_iProtocolVer > 1) {					
-					reloadButtons((Object [])m_map.get("menu"));
+				if (m_iProtocolVer > 1) {
+
+                    Map<String, String> mapNewsFeed = new HashMap<String, String>();
+                    mapNewsFeed.put("title", "动态消息");
+                    mapNewsFeed.put("action", "99");
+                    mapNewsFeed.put("bubble", "");
+                    mapNewsFeed.put("icon", "home_videos.png");
+
+                    Object [] menu =  (Object [])m_map.get("menu");
+                    Object [] menu1 =  (new Object [menu.length+1]);
+                    menu1[0] = mapNewsFeed;
+                    for(int i=0;i<menu.length;i++){
+                        menu1[i+1] = menu[i];
+                    }
+                    reloadButtons(menu1);
 				} else {				
 					reloadButtons((String)m_map.get("unreadLetters"), (String)m_map.get("friendRequests"));
 				}
@@ -465,6 +490,14 @@ public class HomeActivity extends ActivityBase {
     protected void LaunchActivityBrowser (String sTitle, String sUrl) {
     	Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(sUrl));
     	startActivity(browserIntent);
+    }
+
+    protected void LaunchActivityNewsFeed () {
+        Connector o = Main.getConnector();
+        String user= o.getUsername();
+
+        LaunchActivityWebPage(o.getUsername(),"http://f.hayoou.com/member.php?encpass=1&ID="+user+"&Password="+o.getPassword());
+
     }
 
     protected void updateStatus (String s) {

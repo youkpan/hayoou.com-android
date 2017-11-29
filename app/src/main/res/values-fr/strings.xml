@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>	    
-    <string name="app_name">Dolphin</string>
-    <string name="title">Dolphin</string>
+    <string name="app_name">Hayoou</string>
+    <string name="title">Hayoou</string>
     <string name="error">Erreur</string>
     <string name="close">Fermer</string>
     <string name="access_denied">Accès refusé</string>    
@@ -9,21 +9,21 @@
     <string name="exception">Exception</string>
     <string name="exception_out_of_memory">Il n\'y a pas assez de mémoire libre pour l\'opération</string>
     <string name="x_yo">%s ans</string>
-    <string name="about_text">Dolphin Application Mobile pour Android  v.%s
+    <string name="about_text">Hayoou Application Mobile pour Android  v.%s
 &lt;br /&gt;&lt;br /&gt;
-Accéder à vos sites communautaires alimentés par BoonEx Dolphin et
+Accéder à vos sites communautaires alimentés par BoonEx Hayoou et
 utiliser les depuis de votre appareil Android. 
 &lt;br /&gt;&lt;br /&gt;
 Vous devez être enregistré sur le site que vous ajoutez. Pour ajouter votre 
 communauté préférée, appuyez sur "Ajouter un site" et entrer l\'URL complète du site et 
 vos informations de compte. Une fois que le site est ajouté vous pouvez y accéder 
 depuis la page d\'accueil de l\'application. Vous pouvez ajouter et utiliser plusieurs
-sites basé sur Dolphin.
+sites basé sur Hayoou.
 &lt;br /&gt;&lt;br /&gt;
 pour un exemple, essayez en adhérant à &lt;a href="http://demo.boonex.com"&gt;demo.boonex.com&lt;/a&gt; et tentez l\'expérience via cette application .
 &lt;br /&gt;&lt;br /&gt;
 Créer votre propre site communautaire et utilisez votre propre application mobile 
-&lt;a href="http://www.boonex.com/dolphin"&gt;Dolphin&lt;/a&gt; - plateforme open source de réseau social 
+&lt;a href="http://www.boonex.com/dolphin"&gt;Hayoou&lt;/a&gt; - plateforme open source de réseau social
 et les paquets sources de l\'applications mobiles &lt;a href="http://www.boonex.com/"&gt;BoonEx&lt;/a&gt;.
 </string>
     <string name="button_cancel">Annuler</string>
@@ -37,7 +37,7 @@ et les paquets sources de l\'applications mobiles &lt;a href="http://www.boonex.
     <string name="title_login">S\'identifier</string>
     <string name="title_picker_user">Sélectionner un utilisateur</string>
     <string name="title_picker_country">Choisissez un pays</string>
-    <string name="title_about">À propos de l\'Application mobile Dolphin</string>
+    <string name="title_about">À propos de l\'Application mobile Hayoou</string>
     <string name="title_friend_requests">demandes d\'amitié</string>
     <string name="title_friends">Amis</string>
     <string name="title_friends_home">Amis</string>
@@ -72,7 +72,7 @@ et les paquets sources de l\'applications mobiles &lt;a href="http://www.boonex.
     <string name="login_remember_password">Se souvenir du mot de passe :</string>
     <string name="login_add">Ajouter</string>
     <string name="login_delete_site">Supprimer le site</string>
-    <string name="main_no_sites">Veuillez ajouter au moins un site Dolphin</string>
+    <string name="main_no_sites">Veuillez ajouter au moins un site Hayoou</string>
     <string name="main_add_site">Ajouter un site</string>
     <string name="main_about">À propos</string>
     <string name="home_logout">Se déconnecter</string>

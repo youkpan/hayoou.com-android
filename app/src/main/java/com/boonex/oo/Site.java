@@ -8,6 +8,7 @@ public class Site extends Object implements Serializable {
 	protected String m_sUrl;
 	protected String m_sUsername;
 	protected String m_sPwd;
+	protected String m_sPwd0;
 	
 	public Site (String sUrl, String sUsername, String sPwd) {
 		super();
@@ -34,10 +35,16 @@ public class Site extends Object implements Serializable {
 	
 	public String getPwd () {
 		return m_sPwd;
-	}	
-	
+	}
+	public String getPwd0 () {
+		return m_sPwd0;
+	}
+
 	public void setPwd(String pwd) {
 		m_sPwd = pwd;
-	}	
+	}
+	public void setPwd0(String pwd) {
+		m_sPwd0 = pwd;
+	}
 
 }

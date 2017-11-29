@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>	    
-    <string name="app_name">Dolphin</string>
-    <string name="title">Dolphin</string>
+    <string name="app_name">Hayoou</string>
+    <string name="title">Hayoou</string>
     <string name="error">Ошибка</string>
     <string name="close">Закрыть</string>
     <string name="access_denied">Доступ закрыт</string>
@@ -10,16 +10,16 @@
     <string name="exception_out_of_memory">Не хватает свободной памяти</string>
     <string name="x_yo">%s лет</string>
     <!-- <string name="x_yo_gender">%s y/o %s</string> -->
-    <string name="about_text">Мобильное приложение Dolphin для Андроид устройств v.%s
+    <string name="about_text">Мобильное приложение Hayoou для Андроид устройств v.%s
 &lt;br /&gt;&lt;br /&gt;
-Подключайся к сайтам сообществ, работаюших на BoonEx Dolphin.
+Подключайся к сайтам сообществ, работаюших на BoonEx Hayoou.
 &lt;br /&gt;&lt;br /&gt;
 Чтобы зайти сайт, нужно на нем зарегистрироваться. Для подключения к сайту нужно нажать "Добавить Сайт"
 и ввести полный адрес сайта, имя пользователя и пароль. Можно добавлять несколько сайтов, выбрав пункт "Добавить Сайт" из меню.
 &lt;br /&gt;&lt;br /&gt;
 Для примера попробуйте зарегистрироваться на &lt;a href="http://demo.boonex.com/"&gt;demo.boonex.com&lt;/a&gt; и зайти на него через эту программу.
 &lt;br /&gt;&lt;br /&gt;
-При помощи платформы &lt;a href="http://www.boonex.com/dolphin"&gt;Dolphin&lt;/a&gt; от &lt;a href="http://www.boonex.com/"&gt;BoonEx&lt;/a&gt; можно создать свой 
+При помощи платформы &lt;a href="http://www.boonex.com/dolphin"&gt;Hayoou&lt;/a&gt; от &lt;a href="http://www.boonex.com/"&gt;BoonEx&lt;/a&gt; можно создать свой
 собственный сайт социального сообщества с мобильным приложением.</string>
     <string name="button_cancel">Отменить</string>
     <string name="button_settings">Настройки</string>
@@ -32,7 +32,7 @@
     <string name="title_login">Войти</string>
     <string name="title_picker_user">Выбрать пользователя</string>
     <string name="title_picker_country">Выбрать страну</string>
-    <string name="title_about">О программе "Dolphin" для Андроид устройств</string>
+    <string name="title_about">О программе "Hayoou" для Андроид устройств</string>
     <string name="title_friend_requests">Просятся в друзья</string>
     <string name="title_friends">Друзья</string>
     <string name="title_friends_home">Друзья</string>
@@ -67,7 +67,7 @@
     <string name="login_remember_password">Запомнить пароль:</string>
     <string name="login_add">Добавить</string>
     <string name="login_delete_site">Удалить сайт</string>
-    <string name="main_no_sites">Пожалуйста добавьте хотя-бы один Dolphin сайт</string>
+    <string name="main_no_sites">Пожалуйста добавьте хотя-бы один Hayoou сайт</string>
     <string name="main_add_site">Добавить сайт</string>
     <string name="main_about">О программе</string>
     <string name="home_logout">Выйти</string>

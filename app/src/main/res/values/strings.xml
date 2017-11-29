@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>	    
-    <string name="app_name">Dolphin</string>
-    <string name="title">Dolphin</string>
+    <string name="app_name">哈友社区</string>
+    <string name="title">哈友社区</string>
     <string name="error">Error</string>
     <string name="close">Close</string>
     <string name="access_denied">Access denied</string>    
@@ -9,21 +9,21 @@
     <string name="exception">Exception</string>
     <string name="exception_out_of_memory">There is not enough free memory for the operation</string>
     <string name="x_yo">%s y/o</string>
-    <string name="about_text">Dolphin Mobile App for Android  v.%s
+    <string name="about_text">Hayoou Mobile App for Android  v.%s
 &lt;br /&gt;&lt;br /&gt;
-Connect to community sites powered by BoonEx Dolphin and 
+Connect to community sites powered by BoonEx Hayoou and
 use them from your Android device. 
 &lt;br /&gt;&lt;br /&gt;
 You need to be registered at the site you\'re adding. To add your 
 favorite community, tap "Add Site" and enter full site URL and 
 your account details. Once the site is added you can access it 
 from the app homepage. You can add and use multiple 
-Dolphin-based sites.
+Hayoou-based sites.
 &lt;br /&gt;&lt;br /&gt;
 For example, try joining &lt;a href="http://demo.boonex.com"&gt;demo.boonex.com&lt;/a&gt; and use it via this app.
 &lt;br /&gt;&lt;br /&gt;
 Create your own community site and have your own mobile 
-app using &lt;a href="http://www.boonex.com/dolphin"&gt;Dolphin&lt;/a&gt; - open source social networking platform 
+app using &lt;a href="http://www.boonex.com/dolphin"&gt;Hayoou&lt;/a&gt; - open source social networking platform
 and mobile apps package from &lt;a href="http://www.boonex.com/"&gt;BoonEx&lt;/a&gt;.
 </string>
     <string name="button_cancel">Cancel</string>
@@ -37,7 +37,7 @@ and mobile apps package from &lt;a href="http://www.boonex.com/"&gt;BoonEx&lt;/a
     <string name="title_login">Login</string>
     <string name="title_picker_user">Select user</string>
     <string name="title_picker_country">Select country</string>
-    <string name="title_about">About Dolphin Mobile App</string>
+    <string name="title_about">About Hayoou Mobile App</string>
     <string name="title_friend_requests">Friend requests</string>
     <string name="title_friends">Friends</string>
     <string name="title_friends_home">Friends</string>
@@ -72,7 +72,7 @@ and mobile apps package from &lt;a href="http://www.boonex.com/"&gt;BoonEx&lt;/a
     <string name="login_remember_password">Remember Password:</string>
     <string name="login_add">Add</string>
     <string name="login_delete_site">Delete Site</string>
-    <string name="main_no_sites">Please add at least one Dolphin site</string>
+    <string name="main_no_sites">Please add at least one Hayoou site</string>
     <string name="main_add_site">Add a Site</string>
     <string name="main_about">About</string>
     <string name="home_logout">Logout</string>

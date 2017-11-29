@@ -116,10 +116,11 @@ public class Main extends ListActivityBase {
         			int iMemberId = b.getInt("member_id");
         			String username = b.getString("username");
         			String password = b.getString("password");
+					String password0 = b.getString("password0");
         			int iProtocolVer = b.getInt("protocol");
         			Boolean isRememberPassword = b.getBoolean("remember_password");
 
-        			adapter.update(index, site, username, isRememberPassword ? password : "");
+        			adapter.update(index, site, username, isRememberPassword ? password : "",isRememberPassword?password0:"");
         			adapter.writeToFile(this);
         			setListAdapter(adapter);
 

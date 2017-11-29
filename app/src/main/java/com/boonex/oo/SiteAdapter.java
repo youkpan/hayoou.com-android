@@ -102,17 +102,19 @@ public class SiteAdapter extends BaseAdapter {
 		m_listSites.add(new Site(url, username, password));
 	}
 	
-	public void update (int index, String url, String username, String password) {
+	public void update (int index, String url, String username, String password,String password0) {
 		Site site = m_listSites.get(index);
 		site.setUrl(url);
 		site.setUsername(username);
 		site.setPwd(password);
+		//site.setPwd0(password0);
 		initViews();
 	}
 	
 	public void updatePassword (int index, String password) {
 		Site site = m_listSites.get(index);
 		site.setPwd(password);
+		site.setPwd0(password);
 		initViews();
 	}
 	

@@ -26,6 +26,7 @@ public class SiteAddActivity extends ActivityBase {
         setTitleCaption (R.string.title_login);
                
         m_editSite = (EditText) findViewById(R.id.site);
+        m_editSite.setText("f.hayoou.com");
     }
 	
     protected void actionAddSite() {            			

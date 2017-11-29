@@ -53,6 +53,7 @@ public class Connector extends Object implements Serializable {
 	protected int m_iMemberId;
 	protected String m_sUsername;
 	protected String m_sPwd;
+	protected String m_sPwd0;
 	protected String m_sPwdClear;
 	protected int m_iProtocolVer;
 	protected int m_iUnreadLetters;
@@ -69,6 +70,7 @@ public class Connector extends Object implements Serializable {
 		m_sUsername = sUsername;
 		m_sPwdClear = sPwd;
 		m_sPwd = sPwd;
+		m_sPwd0 = sPwd;
 		m_iProtocolVer = 2;
 		m_oClient = new XMLRPCClient(URI.create(m_sUrl));		
 	}
@@ -265,9 +267,15 @@ public class Connector extends Object implements Serializable {
 	public String getPassword() {
 		return m_sPwd;
 	}
-	
+	public String getPassword0() {
+		return m_sPwd0;
+	}
 	public String setPassword(String s) {
 		return (m_sPwd = s);
+	}
+	
+	public String setPassword0(String s) {
+		return (m_sPwd0 = s);
 	}
 	
 	public String getPasswordClear() {

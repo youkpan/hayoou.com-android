@@ -87,7 +87,7 @@ public class WebPageActivity extends ActivityBase {
     	}
     	
     	public void onProgressChanged(WebView view, int progress) {    		
-    		getActionBarHelper().setRefreshActionItemState(progress >= 100 ? false : true);
+    		//getActionBarHelper().setRefreshActionItemState(progress >= 100 ? false : true);
     	}    	
     }
     private class WebPageViewClient extends WebViewClient {
